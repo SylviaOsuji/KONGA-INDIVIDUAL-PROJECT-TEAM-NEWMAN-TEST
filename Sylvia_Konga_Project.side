@@ -8,21 +8,21 @@
     "name": "Invalid_Card_Payment_Test",
     "commands": [{
       "id": "1f0f09eb-9c4d-4221-bdd5-f90e48a02127",
-      "comment": "",
+      "comment": "Open the Konga homepage to begin the end-to-end ordering flow as an existing customer.",
       "command": "open",
       "target": "https://www.konga.com",
       "targets": [],
       "value": ""
     }, {
       "id": "48dd28fd-188a-43bd-bf2a-395d99a130b4",
-      "comment": "",
+      "comment": "Set browser window size to ensure consistent element visibility and avoid responsive layout issues during test execution.",
       "command": "setWindowSize",
       "target": "1400x813",
       "targets": [],
       "value": ""
     }, {
       "id": "f93f7bc4-a322-4a64-ae8b-a499d3219bd6",
-      "comment": "",
+      "comment": "Click on the Login / Signup link to navigate to the authentication page.",
       "command": "click",
       "target": "linkText=Login / Signup",
       "targets": [
@@ -37,7 +37,7 @@
       "value": ""
     }, {
       "id": "6c40eb6a-0697-4673-9d39-98ab0886afdc",
-      "comment": "",
+      "comment": "Focus on the username/email input field in preparation for entering login credentials.",
       "command": "click",
       "target": "id=username",
       "targets": [
@@ -51,7 +51,7 @@
       "value": ""
     }, {
       "id": "c5c14249-6a12-43a8-8579-e7341160b704",
-      "comment": "",
+      "comment": "Enter registered email address for authentication.",
       "command": "type",
       "target": "id=username",
       "targets": [
@@ -62,10 +62,10 @@
         ["xpath=//section[@id='app-content-wrapper']/div[4]/section/section/div/aside/div[2]/div/form/div/input", "xpath:idRelative"],
         ["xpath=//aside/div[2]/div/form/div/input", "xpath:position"]
       ],
-      "value": "osujisylvia.c@gmail.com"
+      "value": "$(osujisylvia.c@gmail.com)"
     }, {
       "id": "84e093b2-1a7e-4030-87fb-871e79b7b8ba",
-      "comment": "",
+      "comment": "Focus on the password input field to allow password entry.",
       "command": "click",
       "target": "id=password",
       "targets": [
@@ -79,7 +79,7 @@
       "value": ""
     }, {
       "id": "a9b67bb5-d531-4b06-93f2-3189fc668263",
-      "comment": "",
+      "comment": "Enter account password securely",
       "command": "type",
       "target": "id=password",
       "targets": [
@@ -90,10 +90,10 @@
         ["xpath=//section[@id='app-content-wrapper']/div[4]/section/section/div/aside/div[2]/div/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "Sylvia200"
+      "value": "$(Sylvia200)"
     }, {
       "id": "b26dbc03-e368-4e8e-8d3a-b44699f80ea4",
-      "comment": "",
+      "comment": "Submit login credentials to authenticate the user and access the Konga dashboard.",
       "command": "click",
       "target": "css=.loginForm_loginButton__aq55S",
       "targets": [
@@ -106,7 +106,7 @@
       "value": ""
     }, {
       "id": "b61cfed0-0a0e-4b5a-96d3-5478e7bb8399",
-      "comment": "",
+      "comment": "Navigate to the Computers and Accessories category from the main menu.",
       "command": "click",
       "target": "linkText=Computers and Accessories",
       "targets": [
@@ -120,7 +120,7 @@
       "value": ""
     }, {
       "id": "a4a6c2c8-850b-4684-87a1-776b38efc425",
-      "comment": "",
+      "comment": "Select the Laptop subcategory to display available laptop products.",
       "command": "click",
       "target": "css=.HierarchicalMenu_menuItem__FjIb_:nth-child(6) span",
       "targets": [
@@ -132,7 +132,7 @@
       "value": ""
     }, {
       "id": "d684f5c0-3b79-4f4b-a965-bec72b5b5640",
-      "comment": "",
+      "comment": "Hover over the Apple MacBooks category to reveal available product options.",
       "command": "mouseOver",
       "target": "css=.HierarchicalMenu_menuItem__FjIb_:nth-child(5) span",
       "targets": [
@@ -144,7 +144,7 @@
       "value": ""
     }, {
       "id": "20640d83-df72-4971-8f37-7b4b4b3c9d17",
-      "comment": "",
+      "comment": "Move cursor away after confirming Apple MacBooks category interaction.",
       "command": "mouseOut",
       "target": "css=.HierarchicalMenu_menuItem__FjIb_:nth-child(5) span",
       "targets": [
@@ -156,7 +156,7 @@
       "value": ""
     }, {
       "id": "64b2a637-ec9b-4f19-ae7a-e1b10d332714",
-      "comment": "",
+      "comment": "Hover over the category menu item to reveal its available subcategories before making a selection.",
       "command": "mouseOver",
       "target": "css=.HierarchicalMenu_menuItem__FjIb_:nth-child(5) span",
       "targets": [
@@ -168,7 +168,7 @@
       "value": ""
     }, {
       "id": "7a824e3e-9119-44af-ac87-7af185ff98a8",
-      "comment": "",
+      "comment": "Click on the Apple MacBooks option to display available MacBook products.",
       "command": "click",
       "target": "css=.HierarchicalMenu_menuItem__FjIb_:nth-child(3) span",
       "targets": [
@@ -180,14 +180,14 @@
       "value": ""
     }, {
       "id": "0be57de4-78e0-48bc-a2ae-d7db403b0614",
-      "comment": "",
+      "comment": "Scroll back to the top of the page to stabilize the viewport before the next interaction.",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
       "id": "81922ce4-1db0-46ee-9ba0-00fd2c242405",
-      "comment": "",
+      "comment": "Select a specific filter option under the MacBook category to refine product results.",
       "command": "click",
       "target": "css=.HierarchicalMenu_menuItemSecondLevel__7VTRb:nth-child(5) label",
       "targets": [
@@ -199,7 +199,7 @@
       "value": ""
     }, {
       "id": "28e81bff-1b13-4bbd-922e-2719b2f46d5a",
-      "comment": "",
+      "comment": "Hover over an additional filter option to confirm visibility and availability.",
       "command": "mouseOver",
       "target": "css=.HierarchicalMenu_menuItemSecondLevel__7VTRb:nth-child(2) span",
       "targets": [
@@ -211,7 +211,7 @@
       "value": ""
     }, {
       "id": "8a0ba616-5f13-4ee0-8b44-f560caee87fb",
-      "comment": "",
+      "comment": "Move cursor away after validating the filter option interaction.",
       "command": "mouseOut",
       "target": "css=.HierarchicalMenu_menuItemSecondLevel__7VTRb:nth-child(2) span",
       "targets": [
@@ -223,7 +223,7 @@
       "value": ""
     }, {
       "id": "7eb6d96b-223f-4792-8f38-beb0c659931c",
-      "comment": "",
+      "comment": "Apply the selected filter to update the displayed MacBook products.",
       "command": "click",
       "target": "css=.HierarchicalMenu_menuItemSecondLevel__7VTRb:nth-child(1) label",
       "targets": [
@@ -235,14 +235,14 @@
       "value": ""
     }, {
       "id": "9df78424-07e1-4441-ab4f-9ad369c05336",
-      "comment": "",
+      "comment": "Scroll to the top to ensure product list refresh is complete before selection.",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
       "id": "416d3898-30dd-443d-a6e7-053d9f9eba5b",
-      "comment": "",
+      "comment": "Select a specific MacBook product from the product listing page.",
       "command": "click",
       "target": "css=.List_listItem__KlvU2:nth-child(6) .asset_imageCover__ttp_S",
       "targets": [
@@ -254,7 +254,7 @@
       "value": ""
     }, {
       "id": "252d0fd9-e452-4a37-bbd9-81ac9356a093",
-      "comment": "",
+      "comment": "Hover over the contact or product detail area to confirm product information visibility.",
       "command": "mouseOver",
       "target": "id=phoneNumberDisplay",
       "targets": [
@@ -270,14 +270,14 @@
       "value": ""
     }, {
       "id": "063bf191-ebd1-43de-9c46-3b07e8542f1a",
-      "comment": "",
+      "comment": "Scroll to the top of the product details page before adding item to cart.",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
       "id": "a319d468-b72c-483f-9042-41a9b3d280c8",
-      "comment": "",
+      "comment": "Add the selected MacBook product to the shopping cart.",
       "command": "click",
       "target": "css=.productDetail_productCtaSticky__71e8u > .button_button__cpnXl",
       "targets": [
@@ -289,14 +289,14 @@
       "value": ""
     }, {
       "id": "a0d67dca-573f-4fce-a7ec-76cd914c9832",
-      "comment": "",
+      "comment": "Scroll to the top to ensure cart update completes before checkout.",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
       "id": "c3425d8f-c466-47c6-92db-95c0a939511a",
-      "comment": "",
+      "comment": "Proceed to the checkout page to begin the payment process.",
       "command": "click",
       "target": "linkText=Continue to Checkout",
       "targets": [
@@ -310,21 +310,21 @@
       "value": ""
     }, {
       "id": "99137af3-71f9-4b92-8772-088d3351d146",
-      "comment": "",
+      "comment": "Adjust viewport to stabilize checkout page elements.",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
       "id": "b69b7e8f-43ff-4236-8292-427faeedd3d2",
-      "comment": "",
+      "comment": "Ensure all payment options are fully loaded before selection.",
       "command": "runScript",
       "target": "window.scrollTo(0,0)",
       "targets": [],
       "value": ""
     }, {
       "id": "29ac0e44-46ab-4bdf-afe9-14cf7e679a89",
-      "comment": "",
+      "comment": "Select the Pay Now payment option during checkout.",
       "command": "click",
       "target": "css=.paymentOptions_paymentOptionsContentPayNowHeader__eiuIT input",
       "targets": [
@@ -336,7 +336,7 @@
       "value": ""
     }, {
       "id": "d9d2b886-864d-47f3-baec-57c7b4147da9",
-      "comment": "",
+      "comment": "Hover over the payment option to confirm interactivity and readiness.",
       "command": "mouseOver",
       "target": "css=.paymentOptions_paymentOptionsContentPayNowHeader__eiuIT input",
       "targets": [
@@ -348,7 +348,7 @@
       "value": ""
     }, {
       "id": "51cd8c64-6882-42e6-a635-6b0039d4f6fa",
-      "comment": "",
+      "comment": "Move cursor away after validating payment option visibility.",
       "command": "mouseOut",
       "target": "css=.paymentOptions_paymentOptionsContentPayNowHeader__eiuIT input",
       "targets": [
@@ -360,7 +360,7 @@
       "value": ""
     }, {
       "id": "9d65748e-ea94-48bf-a3c3-1d91571b0a3d",
-      "comment": "",
+      "comment": "Place the order to initiate the payment gateway process.",
       "command": "click",
       "target": "name=placeOrder",
       "targets": [
@@ -374,14 +374,14 @@
       "value": ""
     }, {
       "id": "67848f73-f0de-40b6-9a05-a0b2f8bd5c6a",
-      "comment": "",
+      "comment": "Wait for the secure third-party payment iframe to load before interacting with card details.",
       "command": "waitForElementPresent",
       "target": "css=iframe",
       "targets": [],
       "value": "20000"
     }, {
       "id": "75b50440-8e63-4ec3-aa27-4e6f776e6212",
-      "comment": "",
+      "comment": "Confirm that the payment iframe is successfully displayed before proceeding with card validation.",
       "command": "assertElementPresent",
       "target": "css=iframe",
       "targets": [],

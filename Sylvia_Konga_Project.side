@@ -15,14 +15,14 @@
       "value": ""
     }, {
       "id": "48dd28fd-188a-43bd-bf2a-395d99a130b4",
-      "comment": "Set browser window size to ensure consistent element visibility and avoid responsive layout issues during test execution.",
+      "comment": "Set browser window size for consistent UI rendering",
       "command": "setWindowSize",
       "target": "1400x813",
       "targets": [],
       "value": ""
     }, {
       "id": "f93f7bc4-a322-4a64-ae8b-a499d3219bd6",
-      "comment": "Click on the Login / Signup link to navigate to the authentication page.",
+      "comment": "Open Login modal",
       "command": "click",
       "target": "linkText=Login / Signup",
       "targets": [
@@ -37,7 +37,7 @@
       "value": ""
     }, {
       "id": "6c40eb6a-0697-4673-9d39-98ab0886afdc",
-      "comment": "Focus on the username/email input field in preparation for entering login credentials.",
+      "comment": "Wait for username field to be visible ",
       "command": "click",
       "target": "id=username",
       "targets": [
@@ -62,24 +62,10 @@
         ["xpath=//section[@id='app-content-wrapper']/div[4]/section/section/div/aside/div[2]/div/form/div/input", "xpath:idRelative"],
         ["xpath=//aside/div[2]/div/form/div/input", "xpath:position"]
       ],
-      "value": "$(osujisylvia.c@gmail.com)"
-    }, {
-      "id": "84e093b2-1a7e-4030-87fb-871e79b7b8ba",
-      "comment": "Focus on the password input field to allow password entry.",
-      "command": "click",
-      "target": "id=password",
-      "targets": [
-        ["id=password", "id"],
-        ["name=password", "name"],
-        ["css=#password", "css:finder"],
-        ["xpath=//input[@id='password']", "xpath:attributes"],
-        ["xpath=//section[@id='app-content-wrapper']/div[4]/section/section/div/aside/div[2]/div/form/div[2]/input", "xpath:idRelative"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": ""
+      "value": "username@gmail.com"
     }, {
       "id": "a9b67bb5-d531-4b06-93f2-3189fc668263",
-      "comment": "Enter account password securely",
+      "comment": "Enter account password ",
       "command": "type",
       "target": "id=password",
       "targets": [
@@ -90,10 +76,10 @@
         ["xpath=//section[@id='app-content-wrapper']/div[4]/section/section/div/aside/div[2]/div/form/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "$(Sylvia200)"
+      "value": "***********"
     }, {
       "id": "b26dbc03-e368-4e8e-8d3a-b44699f80ea4",
-      "comment": "Submit login credentials to authenticate the user and access the Konga dashboard.",
+      "comment": "Submit login form",
       "command": "click",
       "target": "css=.loginForm_loginButton__aq55S",
       "targets": [
